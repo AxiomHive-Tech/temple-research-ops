@@ -33,7 +33,7 @@ This repository begins as a language-neutral scaffold. No production application
 
 ## Contributing
 
-Use a short-lived branch and pull request. Keep changes small and connect each change to a research or operational need. Before merging, pass the repository checks and document material changes to data handling, security, or system behavior. The initial CI check is active. GitHub rejected branch protection because the current plan does not enable it for private repositories; enable it if the plan changes, or only make the repository public after an explicit decision.
+Use a short-lived branch and pull request. Keep changes small and connect each change to a research or operational need. Before merging, pass the repository checks and document material changes to data handling, security, or system behavior. `main` requires the `scaffold-check` CI status, disallows force-pushes and deletion, and requires conversation resolution.
 
 ## Attribution
 
