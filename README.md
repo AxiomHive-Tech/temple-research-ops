@@ -11,7 +11,7 @@ Axiom Hive Technology project for supporting reliable business development and c
 - Disagreement and impact are examined rather than hidden or forced into consensus.
 - Affected people can raise concerns, seek human review, and receive corrective action.
 
-The operational review checklist is in [`docs/responsible-ai-checklist.md`](docs/responsible-ai-checklist.md). The architecture recommendations are in [`docs/architecture.md`](docs/architecture.md).
+The operational review checklist is in [`docs/responsible-ai-checklist.md`](docs/responsible-ai-checklist.md). The architecture overview is in [`docs/architecture.md`](docs/architecture.md), with supporting source-backed research in [`docs/research-architecture-recommendations.md`](docs/research-architecture-recommendations.md).
 
 ## Repository layout
 
