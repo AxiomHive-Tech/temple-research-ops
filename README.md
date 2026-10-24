@@ -4,14 +4,14 @@ Axiom Hive Technology project for supporting reliable business development and c
 
 ## Principles
 
-- Responsibility remains with named people; AI does not absorb accountability.
+- AI supports; humans lead, decide, authorize, and own actions and outcomes. AI does not control the organization or independently take authority.
 - Research and requirements come before technology selection.
 - Material claims and decisions are traceable to evidence, rationale, alternatives, and risks.
 - Findings distinguish fact, estimate, interpretation, and hypothesis.
 - Disagreement and impact are examined rather than hidden or forced into consensus.
 - Affected people can raise concerns, seek human review, and receive corrective action.
 
-The operational review checklist is in [`docs/responsible-ai-checklist.md`](docs/responsible-ai-checklist.md). The architecture overview is in [`docs/architecture.md`](docs/architecture.md), with supporting source-backed research in [`docs/research-architecture-recommendations.md`](docs/research-architecture-recommendations.md).
+The operational review checklist is in [`docs/responsible-ai-checklist.md`](docs/responsible-ai-checklist.md). The comprehensive human-oversight compliance audit checklist is in [`docs/human-oversight-compliance-audit-checklist.md`](docs/human-oversight-compliance-audit-checklist.md). The architecture overview is in [`docs/architecture.md`](docs/architecture.md), with supporting source-backed research in [`docs/research-architecture-recommendations.md`](docs/research-architecture-recommendations.md).
 
 ## Repository layout
 

@@ -22,6 +22,7 @@ jobs:
           test -s docs/data-handling.md
           test -s docs/research-architecture-recommendations.md
           test -s docs/responsible-ai-checklist.md
+          test -s docs/human-oversight-compliance-audit-checklist.md
           test -d src
           test -d tests
           test -d migrations
