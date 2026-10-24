@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  scaffold-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Verify required project files and directories
+        run: |
+          set -eu
+          test -s README.md
+          test -s docs/architecture.md
+          test -s docs/data-handling.md
+          test -s docs/responsible-ai-checklist.md
+          test -d src
+          test -d tests
+          test -d migrations
+          test -d fixtures
+          test -d docs/decision-records
+          echo "Scaffold integrity checks passed."
