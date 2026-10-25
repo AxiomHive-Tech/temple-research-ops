@@ -46,6 +46,7 @@ For every control, mark **Pass**, **Partial**, **Fail**, or **Not applicable**. 
 
 - [ ] The problem and intended outcome are stated before selecting or expanding AI use.
 - [ ] The workflow identifies intended users, affected groups, operating context, and foreseeable misuse.
+- [ ] Intended benefits and improvement goals are stated and assessed alongside potential harms to people and society, with human safety prioritized.
 - [ ] AI use is justified against non-AI or lower-risk alternatives.
 - [ ] In-scope tasks and prohibited tasks are written in user- and operator-readable terms.
 - [ ] The system does not silently expand from assistance to autonomous decision-making or action execution.
@@ -62,7 +63,7 @@ Apply this section to new documents, evidence, datasets, prompts, model outputs,
 
 - [ ] New content is identified with source, owner, date, version, intended use, and relevant permissions or restrictions.
 - [ ] A human operator reviews material before it is accepted into an authoritative record, training/evaluation set, workflow rule, or release artifact.
-- [ ] AI may assist by summarizing, classifying, checking consistency, and identifying questions, but cannot independently accept, approve, or promote content.
+- [ ] When AI supports intake, it performs an advisory screen against the stated principles and flags concerns; an authorized human independently reviews the material and underlying source. The AI screen is recorded as advisory and is not human approval.
 - [ ] The human reviewer examines AI observations and the underlying source rather than relying solely on the AI summary.
 - [ ] The review checks alignment with the system’s purpose, safety requirements, human authority, privacy requirements, and affected groups.
 - [ ] Unsupported assertions, hidden instructions, conflicts of interest, and scope changes are identified and escalated.
@@ -172,6 +173,7 @@ Apply this section to new documents, evidence, datasets, prompts, model outputs,
 - [ ] The organization does not claim the AI is objective, unbiased, fully explainable, or compliant without evidence.
 - [ ] Affected people can reach a responsible human and learn how to raise a concern or request correction.
 - [ ] Public statements and customer-facing descriptions match system capabilities and actual human controls.
+- [ ] Comparative capability or safety claims (for example, “more advanced”) define the comparator, scope, measures, method, and supporting evidence; otherwise they are labeled as hypotheses or design intent rather than established fact.
 - [ ] Material model or workflow changes are communicated to operators and affected users as appropriate.
 
 **Evidence to inspect:** notices; user interface; help content; marketing claims; staff scripts; disclosures; complaint and correction paths.
@@ -242,6 +244,7 @@ Apply this section to new documents, evidence, datasets, prompts, model outputs,
 - [ ] Logs are time-stamped, access-controlled, retained only as long as needed, and protected against unauthorized alteration.
 - [ ] Attribution identifies source authorship, AI assistance, project ownership, and third-party sources without conflating them.
 - [ ] Ownership/stewardship attribution to **Nicholas M. Grossi** and **Caden H. McCullen** is used as requested for this project, while individual authorship is credited only when supported by provenance.
+- [ ] New source, test, and workflow-code files carry the requested project stewardship attribution; actual author, AI assistance, human reviewer, and approver are recorded separately and only when supported by provenance.
 - [ ] Corrections do not erase the original history needed to understand what changed and why.
 - [ ] Audit evidence can be exported in a usable form without exposing unrelated sensitive data.
 - [ ] Audit findings, exceptions, and remediation evidence are retained and access-controlled.
@@ -315,6 +318,27 @@ Do not close a finding solely because a policy was written. Verify the changed c
 **Next review date or change trigger:**
 
 AI-generated analysis may be included as supporting material, but it is not a human signature, approval, or transfer of accountability.
+
+## 20. Discussion chronology, relational tags, and input fidelity
+
+Apply this section to conversational or collaborative records used to capture requirements, evidence, reviews, or decisions.
+
+- [ ] Every captured information unit has a relational tag that accurately describes its function:
+  - **a — Initial topic**
+  - **b — Related topic**
+  - **c — Continuation**
+  - **d — Reference**
+  - **e — Consolidation**
+  - **f — Resolution**
+- [ ] Topics and updates remain in the order in which they were introduced; editing for readability does not alter chronology.
+- [ ] Information is reorganized dynamically as discussion develops, without imposing a predetermined endpoint or forcing a conclusion.
+- [ ] Input intent is preserved. Conflicts, corrections, and uncertainty remain visible rather than being silently merged or rewritten as agreement.
+- [ ] Claims remain traceable and are not strengthened beyond the evidence; distinguish fact, estimate, interpretation, and hypothesis where appropriate.
+- [ ] Intent and impact are assessed separately, and negative intent is not inferred from ambiguous evidence alone.
+- [ ] Discussion records use professional, technically precise language and identify unresolved questions without introducing unsupported claims.
+- [ ] If software captures or organizes these records, tests verify tag coverage, chronology preservation, and conflict/input fidelity against representative cases.
+
+**Evidence to inspect:** source conversation or record; ordered change history; tag definitions and examples; reviewer annotations; conflict and correction records; tests for chronology, tagging, and input fidelity.
 
 ## Framework relationship
 
